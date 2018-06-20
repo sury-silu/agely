@@ -1,0 +1,554 @@
+/*
+Theme Name: Impreza Child
+Template: Impreza
+Version: 1.0
+Author:	UpSolution
+Theme URI: http://impreza.us-themes.com/
+Author URI: http://us-themes.com/
+*/
+
+/*Add your own styles here:*/
+
+header .w-socials-item-link {
+    background-color: #fff;
+    color: #65CDF2 !important;
+    margin-right: 8px;
+    border-radius: 50% !important;
+    font-size: 15px;
+}
+
+.w-socials-item .w-socials-item-link-hover {
+    background-color: #fff !important;
+}
+.no-touch .w-socials:not(.hover_none) .w-socials-item-link:hover {
+    color: #65CDF2 !important;
+}
+
+#top_contact i {
+    margin-right: 5px;
+}
+
+#top_contact a {
+    color: #fff;
+}
+
+.l-header i {
+    opacity: 1;
+}
+
+footer h5 {
+    margin-bottom: 11px !important;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+.w-search-form {
+    background-color: #65CDF2 !important;
+}
+
+.w-nav-icon {
+    color: #65CDF2 !important;
+}
+
+.tp-bullet {
+    background-color: #d7dee4 !important;
+}
+.tp-bullet:hover, .tp-bullet.selected {
+    border-color: #65CDF2 !important;
+  	background-color: #fff !important;
+}
+
+.tparrows.hesperiden {
+    background-color: #65CDF2 !important;
+}
+
+.footer-logo img {
+    width: 200px;
+}
+
+footer a:hover {
+    color: #65CDF2 !important;
+}
+
+/* Home page Inspiration section */
+
+.inspi-thumb, .inspi-thumb img {
+	width: 100%;
+	height: 270px;
+}
+.inspiration-category {
+    background-color: #65CDF2;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    width: 100%;
+}
+
+.ifb-face.ifb-back {
+    background-color: #65CDF2;
+}
+
+.inspi-back-cat {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.inspi-details {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inspi-details a {
+    border: 2px solid #fff !important;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+.inspi-details a:hover {
+		background-color: #e95095;
+  	color: #fff !important;
+}
+
+#inspiration .ifb-flip-box-section {
+    padding: 0px;
+}
+
+.inspi-cards .vc_column-inner {
+    padding-left: 1.1rem !important;
+    padding-right: 1.1rem !important;
+}
+
+.inspi-cards .short-description {
+    color: #fff;
+    font-size: 15px;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.card-logo {
+		max-height: 170px;
+}
+
+/* Inspiratin single page */
+
+#inspi-top {
+    text-align: center;
+  	min-height: 500px;
+}
+
+#inspi-top #breadcrumb a {
+		color: #000;
+  	font-style: italic;
+}
+
+#inspi-top #breadcrumb a:hover {
+		color: #fff !important;
+}
+
+#inspi-top #name {
+    text-transform: uppercase;
+  	font-size: 50px;
+    margin-top: 30px;
+		margin-bottom: 10px;
+  	color: #fff;
+}
+
+#info {
+    font-size: 20px;
+  	color: #fff;
+}
+
+#inspi_single .l-section-h.i-cf {
+    padding-top: 0px !important;
+}
+
+#inspi_logo {
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+  	margin-bottom: 0px;
+}
+
+#inspi_details {
+    padding: 10px;
+    color: #fff;
+    background-color: #65cdf2;
+}
+
+#inspi_details h2 {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#inspi_details i span {
+    margin: 0px 10px;
+  	font-family: "Open Sans", sans-serif;
+}
+
+#inspi_details i span a{
+		color: #fff;  
+}
+
+#featured_image .vc_column-inner {
+		padding:0;  
+}
+#featured_image .l-section-h.i-cf {
+    padding-bottom: 0px;
+}
+#featured_image #thumbnail img {
+    height: 475px;
+}
+#inspi-top .l-section-h.i-cf {
+    padding-bottom: 10px;
+}
+
+#inspi_overlay {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    background: rgba(0,0,0,0.3);
+}
+
+#inspi_details_row {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#inspi_details_row .l-section-h.i-cf {
+    max-width: 100%;
+}
+
+#inspi_social p {
+		border-bottom: 0px; 
+}
+
+#inspi_social {
+    border-top: 1px solid #65CDF2;
+    border-bottom: 1px solid #65CDF2;
+    padding-top: 10px;
+}
+
+#inspi_social .w-socials-item-link:hover {
+    color: #fff !important;
+  	background-color: #e95095 !important;
+}
+
+#inspi_social .w-socials-item-link {
+    background-color: #65CDF2;
+    border-radius: 50%;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+@media screen and (max-width:480px) {
+  #inspi-top {
+  	min-height: 400px;
+	}
+}
+
+/******** SHOP *************/
+ .woocommerce-ordering {
+    display: none;
+}
+
+.added_to_cart:hover {
+    color: #fff !important;
+}
+
+.added_to_cart {
+    background-color: #65CDF2;
+    color: #fff;
+    line-height: 2.8 !important;
+    padding: 0 1.8em;
+    border-radius: 0.3em;
+  	border-bottom: none !important;
+}
+
+button, .button {
+    background-color: #65CDF2 !important;
+}
+
+.w-cart-dropdown {
+    background-color: #fff;
+}
+
+.woocommerce-mini-cart__buttons .wc-forward {
+    color: #fff;
+}
+
+/**********Product**************/
+.woocommerce-message {
+    background-color: #65CDF2;
+    color: #fff;
+}
+
+.woocommerce-message a.button {
+    color: #000 !important;
+}
+
+.sidebar_none .woocommerce-tabs{
+		width: 100%; 
+}
+
+section.related.products {
+    display: none;
+}
+
+.button.product_type_external {
+    color: #fff !important;
+}
+
+.vimeo-container {
+		width: 60%;
+  	margin-bottom: 20px;
+}
+
+.single-product .wpulike {
+    display: none;
+}
+
+@media screen and (max-width:720px) {
+  	.vimeo-container {
+        width: 100%;  
+    }
+}
+
+/*********Cart**********/
+.w-cart {
+    display: none;
+}
+
+/******My account *****/
+.lost_password{
+		float: none !important;
+    clear: left;
+}
+
+/**************** Blog ******************/
+.w-blog-post-more::before {
+    background-color: #65CDF2 !important;
+}
+
+.w-blog-post-more:hover {
+    border-color: #65cdf2 !important;
+    color: #fff !important;
+}
+
+/************* Single Post *************/
+.for_sharing.top{
+  padding-left: 0px !important;
+}
+
+.single-post .w-blog-post-preview img {
+    max-height: 440px;
+}
+
+/************** Home : Article ******************/
+
+.articletype .w-blog-post-preview img {
+    height: 270px;
+}
+
+.articletype article {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.articletype .entry-title {
+    color: #fff !important;
+}
+
+.articletype .w-blog-post-title {
+    text-align: center;
+    background-color: #65CDF2;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-size: 18px !important;
+}
+
+.home #inspiration .w-blog-post-h {
+    height: 330.4px !important;
+    width: 258.5px !important;
+ 		margin: auto;
+}
+
+/********** Article : Single **************/
+.for_blogpost.type-article .w-blog-post-preview {
+    width: 50%;
+    float: left;
+}
+
+.for_blogpost.type-article .w-blog-post-preview img{
+ 	height: 630px; 
+}
+.single-article main > article > .l-section-h {
+    max-width: 100%;
+    margin: 0;
+}
+
+.for_blogpost.type-article .w-blog-post-body {
+    padding-top: 20px;
+  	text-align: center;
+  	width: 50%;
+    float: left;
+  	margin-top: 100px;
+}
+
+.single-article .wp_ulike_general_class {
+    display: none;
+}
+
+.single-article main > article > .l-section-h {
+    margin-left: 0px;
+		padding-top: 0px;
+}
+
+.single-article main > article {
+    padding-left: 0px !important;
+ 		padding-right: 0px !important;
+}
+
+.w-sharing.type_solid .w-sharing-item {
+    min-width: 40px;
+    padding: 0 10px;
+    height: 35px;
+  	line-height: 35px;
+    font-size: 18px;
+}
+
+.for_blogpost.type-article .l-section.for_sharing.top {
+    padding-right: 0 !important;
+}
+
+.for_blogpost.type-article .l-section.for_sharing.top .l-section-h{
+  max-width: 100% !important;
+}
+
+.for_blogpost.type-article .for_sharing.top .align_left {
+    text-align: center;
+}
+
+.for_blogpost.type-article .w-blog-post-body > h1, .for_blogpost.type-article .w-blog-post-body > div {
+    padding: 0 10% !important;
+}
+
+.for_blogpost.type-article .for_sharing.top .l-section-h.i-cf{
+ 		padding-bottom: 0px; 
+}
+
+.single-article .l-section-h.i-cf[itemprop="text"] {
+    padding-bottom: 0px;
+}
+
+@media screen and (max-width:680px) {
+		.for_blogpost.type-article .w-blog-post-preview, .for_blogpost.type-article .w-blog-post-body {
+   			width: 100%;
+  	}
+  
+    .single-article main > article {
+        padding-right: 0px !important;
+    }
+  	.for_blogpost.type-article .w-blog-post-body, .for_blogpost.type-article .for_sharing.top {
+        padding-left: 20px;
+      	padding-right: 20px;
+    }
+  
+  .for_blogpost.type-article .w-blog-post-body {
+   	margin-top: 0px; 
+  }
+  .for_blogpost.type-article .w-blog-post-preview img{
+    height: auto; 
+  }
+}
+
+
+/************ Menu *************/
+
+.w-nav.type_desktop .w-nav-list.level_3 {
+    right: 100%;
+    left: auto;
+}
+
+._mi._before._image {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.w-nav.type_desktop .w-nav-list.level_2 .w-nav-arrow::before {
+		content: '\f104';
+}
+
+.w-nav.type_desktop .menu-item-has-children > .w-nav-anchor:not(.level_1) .w-nav-arrow {
+    right: unset;
+    left: 0;
+}
+
+.w-nav.type_desktop .w-nav-anchor.level_2 .w-nav-title {
+    padding-right: 0px !important;
+}
+
+.w-nav.type_desktop .w-nav-list.level_2 {
+    min-width: 140px !important;
+}
+
+.w-nav.type_desktop .w-nav-list.level_4 {
+    left: unset;
+    right: 100%;
+}
+
+.w-nav.type_desktop .level_3 .w-nav-arrow {
+    margin-left: -3px;
+}
+
+.w-nav.type_desktop #menu-item-573 {
+    width: 70%;
+}
+.w-nav.type_desktop #menu-item-574 {
+    width: 30%;
+}
+
+/*********** Archive ****************/
+.archive .g-breadcrumbs {
+    position: absolute;
+    top: 45px;
+    right: 0px;
+}
+
+.w-blog-post-h .group-text {
+    color: #fff;
+    padding: 5px 15px;
+  	position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+
+.w-blog-post-h .group-text.guides {
+    background-color: #ed6387;
+}
+
+.w-blog-post-h .group-text.stories {
+    background-color: #9180ba;
+}
+
+.w-blog-post-h .group-text.learn {
+    background-color: #ffa93c;
+}
+
+.archive .l-titlebar {
+    background-color: #fff !important;
+}
+.archive .l-titlebar p {
+    opacity: 1;
+}
