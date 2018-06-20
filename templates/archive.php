@@ -15,13 +15,30 @@ $titlebar_vars = array(
 );
 if ( is_category() OR is_tag() OR is_tax() ) {
 	$term = get_queried_object();
+	
+	$archive = $term;
+	
 	if ( $term ) {
 		$taxonomy = $term->taxonomy;
 		$term = $term->term_id;
 	}
 	$titlebar_vars['subtitle'] = get_term_field( 'description', $term, $taxonomy, 'display' );
 }
-us_load_template( 'templates/titlebar', $titlebar_vars );
+
+echo '<div class="l-titlebar"><h1>' . $archive->name . '</h1>';
+
+/****** Display Archive breadcrumb *********/
+echo '<div id="archive_breadcrumbs">Home > ';
+
+if( $archive->parent ){
+	$parent = get_term_by( 'id', $archive->parent, $archive->taxonomy );
+	
+	echo $parent->name . ' > ';
+}
+
+echo $archive->name . '</div>';
+
+echo '<p> ' . get_term_field( 'description', $term, $taxonomy, 'display' ) . '</p></div>';
 
 $template_vars = array(
 	'layout' => us_get_option( 'archive_layout', 'smallcircle' ),

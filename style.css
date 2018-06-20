@@ -520,10 +520,9 @@ section.related.products {
 }
 
 /*********** Archive ****************/
-.archive .g-breadcrumbs {
-    position: absolute;
-    top: 45px;
-    right: 0px;
+#archive_breadcrumbs {
+    color: #e95095;
+    font-style: italic;
 }
 
 .w-blog-post-h .group-text {
