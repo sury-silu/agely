@@ -520,9 +520,14 @@ section.related.products {
 }
 
 /*********** Archive ****************/
+
+.archive .l-titlebar h1 {
+    margin-top: 30px;
+}
 #archive_breadcrumbs {
     color: #e95095;
     font-style: italic;
+	margin-bottom: 30px;
 }
 
 .w-blog-post-h .group-text {

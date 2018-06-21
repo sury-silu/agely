@@ -28,15 +28,15 @@ if ( is_category() OR is_tag() OR is_tax() ) {
 echo '<div class="l-titlebar"><h1>' . $archive->name . '</h1>';
 
 /****** Display Archive breadcrumb *********/
-echo '<div id="archive_breadcrumbs">Home > ';
+echo '<div id="archive_breadcrumbs"><a href="' . get_home_url() . '">Home</a> > ';
 
 if( $archive->parent ){
 	$parent = get_term_by( 'id', $archive->parent, $archive->taxonomy );
 	
-	echo $parent->name . ' > ';
+	echo '<a href="' . get_term_link( $archive->parent, $parent->taxonomy ) . '">' . $parent->name . '</a> > ';
 }
 
-echo $archive->name . '</div>';
+echo '<a href="' . get_term_link( $archive->term_id, $archive->taxonomy ) . '">' . $archive->name . '</a>'. '</div>';
 
 echo '<p> ' . get_term_field( 'description', $term, $taxonomy, 'display' ) . '</p></div>';
 
