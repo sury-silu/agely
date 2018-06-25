@@ -559,3 +559,7 @@ section.related.products {
 .archive .l-titlebar p {
     opacity: 1;
 }
+
+.w-blog.layout_tiles .w-blog-post-body .w-sharing{
+    pointer-events: auto;
+}
