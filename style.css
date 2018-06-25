@@ -228,7 +228,7 @@ footer a:hover {
 }
 
 #inspi_social p {
-		border-bottom: 0px; 
+	border-bottom: 0px; 
 }
 
 #inspi_social {
@@ -290,6 +290,19 @@ button, .button {
 .button.product_type_simple.ajax_add_to_cart {
     color: #fff;
 }
+
+.woocommerce-result-count {
+    display: none;
+}
+
+#shop .w-sharing.type_solid .w-sharing-item {
+    min-width: 30px;
+    padding: 0 8px;
+}
+#shop .w-sharing.type_solid .w-sharing-item .w-sharing-icon {
+    font-size: 12px !important;
+}
+
 /**********Product**************/
 .woocommerce-message {
     background-color: #65CDF2;

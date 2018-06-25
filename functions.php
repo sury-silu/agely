@@ -162,4 +162,26 @@ function remove_menus(){
 }  
 add_action( 'admin_menu', 'remove_menus', PHP_INT_MAX );  
 
-remove_filter( 'the_content', 'wpautop' );
+// Add social icon to products cards on shop page.
+add_action( 'wp_head', 'remove_woo_action' );
+function remove_woo_action(){
+	remove_action( 'woocommerce_after_shop_loop_item_title', 'us_woocommerce_after_shop_loop_item_title', 20 );
+}
+
+add_action( 'woocommerce_after_shop_loop_item_title', 'us_child_woocommerce_after_shop_loop_item_title', 20 );
+function us_child_woocommerce_after_shop_loop_item_title() {
+	
+	if ( us_get_option( 'post_sharing' ) ) {
+		$sharing_providers = (array) us_get_option( 'post_sharing_providers' );
+		$us_sharing_atts = array(
+			'type' => us_get_option( 'post_sharing_type', 'simple' ),
+			'align' => 'center',
+		);
+		foreach ( array( 'email', 'facebook', 'twitter', 'linkedin', 'gplus', 'pinterest', 'vk' ) as $provider ) {
+			$us_sharing_atts[$provider] = in_array( $provider, $sharing_providers );
+		}
+		us_load_template( 'shortcodes/us_sharing', array( 'atts' => $us_sharing_atts ) );
+	}
+	
+	echo '</div>';
+}
