@@ -259,7 +259,7 @@ footer a:hover {
 
 /******** SHOP *************/
  .woocommerce-ordering {
-    display: none;
+    display: none !important;
 }
 
 .added_to_cart:hover {
@@ -287,6 +287,9 @@ button, .button {
     color: #fff;
 }
 
+.button.product_type_simple.ajax_add_to_cart {
+    color: #fff;
+}
 /**********Product**************/
 .woocommerce-message {
     background-color: #65CDF2;
