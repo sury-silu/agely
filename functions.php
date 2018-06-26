@@ -187,18 +187,16 @@ function us_child_woocommerce_after_shop_loop_item_title() {
 }
 
 // Add to cart button of the external products on archive pages linked to product single page.
-add_filter( 'woocommerce_loop_add_to_cart_link', 'woocommerce_loop_add_to_cart_link_external' );
-function woocommerce_loop_add_to_cart_link_external( $link ) {
+add_filter( 'woocommerce_loop_add_to_cart_link', 'woocommerce_loop_add_to_cart_link_external_product', 10, 3 );
+function woocommerce_loop_add_to_cart_link_external_product( $link, $product, $args ) {
 	
-	global $product;
-
 	$product_url = $product->add_to_cart_url();
 	
 	if ( $product->is_type( 'external' ) ){
 		$product_url = get_permalink( $product->id );
 	}
 	
-	$link = sprintf( '<a href="%s" data-quantity="%s" class="%s" %s>%s</a>',
+	$link = sprintf( '<p class="cart"><a href="%s" data-quantity="%s" class="%s" %s>%s</a></p>',
 		esc_url( $product_url ),
 		esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
 		esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
