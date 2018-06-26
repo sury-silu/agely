@@ -171,6 +171,9 @@ function remove_woo_action(){
 add_action( 'woocommerce_after_shop_loop_item_title', 'us_child_woocommerce_after_shop_loop_item_title', 20 );
 function us_child_woocommerce_after_shop_loop_item_title() {
 	
+	echo '</a><div class="social_share"><button>share</button></div>';
+	echo '<div class="social_share_icons">';
+	
 	if ( us_get_option( 'post_sharing' ) ) {
 		$sharing_providers = (array) us_get_option( 'post_sharing_providers' );
 		$us_sharing_atts = array(
@@ -183,7 +186,7 @@ function us_child_woocommerce_after_shop_loop_item_title() {
 		us_load_template( 'shortcodes/us_sharing', array( 'atts' => $us_sharing_atts ) );
 	}
 	
-	echo '</div>';
+	echo '</div></div>';
 }
 
 // Add to cart button of the external products on archive pages linked to product single page.

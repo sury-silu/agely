@@ -256,20 +256,23 @@ if ( ! $use_special_quote_markup ): ?>
 						<span class="w-btn-label"><?php _e( 'Read More', 'us' ) ?></span>
 					</a>
 				<?php endif/*( $show_read_more )*/
-				;
+				;?>
 				
-				if ( us_get_option( 'post_sharing' ) ) {
-					$sharing_providers = (array) us_get_option( 'post_sharing_providers' );
-					$us_sharing_atts = array(
-						'type' => us_get_option( 'post_sharing_type', 'simple' ),
-						'align' => 'center',
-					);
-					foreach ( array( 'email', 'facebook', 'twitter', 'linkedin', 'gplus', 'pinterest', 'vk' ) as $provider ) {
-						$us_sharing_atts[$provider] = in_array( $provider, $sharing_providers );
-					}
-					us_load_template( 'shortcodes/us_sharing', array( 'atts' => $us_sharing_atts ) );
-				}?>
-
+				<div class="social_share"><button>share</button></div>
+				<div class="social_share_icons">
+					<?php
+					if ( us_get_option( 'post_sharing' ) ) {
+						$sharing_providers = (array) us_get_option( 'post_sharing_providers' );
+						$us_sharing_atts = array(
+							'type' => us_get_option( 'post_sharing_type', 'simple' ),
+							'align' => 'center',
+						);
+						foreach ( array( 'email', 'facebook', 'twitter', 'linkedin', 'gplus', 'pinterest', 'vk' ) as $provider ) {
+							$us_sharing_atts[$provider] = in_array( $provider, $sharing_providers );
+						}
+						us_load_template( 'shortcodes/us_sharing', array( 'atts' => $us_sharing_atts ) );
+					}?>
+				</div>
 			</div>
 		</div>
 	</article>

@@ -573,6 +573,21 @@ section.related.products {
     opacity: 1;
 }
 
-.w-blog.layout_tiles .w-blog-post-body .w-sharing{
+.w-blog.layout_tiles .w-blog-post-body .social_share_icons, .w-blog.layout_tiles .w-blog-post-body .social_share{
     pointer-events: auto;
+}
+
+.social_share{ 
+	text-align: center;
+}
+
+.social_share button {
+    padding: 1px 15px;
+    border-radius: 15px;
+	color: #fff;
+}
+
+.social_share_icons {
+	display: none;
+	margin-top: 10px;
 }
