@@ -303,6 +303,10 @@ button, .button {
     font-size: 12px !important;
 }
 
+.woocommerce-products-header__title {
+    margin-bottom: 0px;
+}
+
 /**********Product**************/
 .woocommerce-message {
     background-color: #65CDF2;

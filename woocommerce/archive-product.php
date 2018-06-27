@@ -35,9 +35,22 @@ do_action( 'woocommerce_before_main_content' );
 <header class="woocommerce-products-header">
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-	<?php endif; ?>
+	<?php endif;
+	
+	// Add breadcrumb
+	$archive = get_queried_object();
+	
+	echo '<div id="archive_breadcrumbs"><a href="' . get_home_url() . '">Home</a> > ';
 
-	<?php
+	if( $archive->parent ){
+		$parent = get_term_by( 'id', $archive->parent, $archive->taxonomy );
+		
+		echo '<a href="' . get_term_link( $archive->parent, $parent->taxonomy ) . '">' . $parent->name . '</a> > ';
+	}
+
+	echo '<a href="' . get_term_link( $archive->term_id, $archive->taxonomy ) . '">' . $archive->name . '</a>'. '</div>';
+
+
 	/**
 	 * Hook: woocommerce_archive_description.
 	 *
