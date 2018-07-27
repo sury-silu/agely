@@ -40,16 +40,20 @@ do_action( 'woocommerce_before_main_content' );
 	// Add breadcrumb
 	$archive = get_queried_object();
 	
-	echo '<div id="archive_breadcrumbs"><a href="' . get_home_url() . '">Home</a> > ';
+	echo '<div id="archive_breadcrumbs"><a href="' . get_home_url() . '">Home</a> > <a href="' . get_home_url() . '/products">Products</a>';
 
-	if( $archive->parent ){
-		$parent = get_term_by( 'id', $archive->parent, $archive->taxonomy );
+	if( $archive->name != 'product' ) {
+	
+		echo " > ";
 		
-		echo '<a href="' . get_term_link( $archive->parent, $parent->taxonomy ) . '">' . $parent->name . '</a> > ';
+		if( $archive->parent ){
+			$parent = get_term_by( 'id', $archive->parent, $archive->taxonomy );
+			
+			echo '<a href="' . get_term_link( $archive->parent, $parent->taxonomy ) . '">' . $parent->name . '</a> > ';
+		}
+
+		echo '<a href="' . get_term_link( $archive->term_id, $archive->taxonomy ) . '">' . $archive->name . '</a>'. '</div>';
 	}
-
-	echo '<a href="' . get_term_link( $archive->term_id, $archive->taxonomy ) . '">' . $archive->name . '</a>'. '</div>';
-
 
 	/**
 	 * Hook: woocommerce_archive_description.
