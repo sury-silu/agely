@@ -338,6 +338,11 @@ section.related.products {
     display: none;
 }
 
+.single-product #article_footer section {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 @media screen and (max-width:720px) {
   	.vimeo-container {
         width: 100%;  
@@ -469,6 +474,15 @@ section.related.products {
 }
 
 .single-article .l-section-h.i-cf[itemprop="text"] {
+    padding-bottom: 0px;
+}
+
+#article_footer section {
+    padding-top: 0px;
+}
+
+#article_footer .l-section-h.i-cf {
+    padding-top: 0px;
     padding-bottom: 0px;
 }
 

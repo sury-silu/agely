@@ -235,6 +235,8 @@ $meta_html = apply_filters( 'us_single_post_meta_html', $meta_html, get_the_ID()
 
 <?php echo $the_content ?>
 
+<div id="article_footer"><?php echo do_shortcode ( get_post( 840 )->post_content ); ?></div>
+
 <?php if ( $show_tags AND ! empty( $the_tags ) ): ?>
 	<section class="l-section for_tags">
 		<div class="l-section-h i-cf">
