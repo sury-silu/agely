@@ -41,7 +41,7 @@ footer h5 {
 }
 
 footer p {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .w-search-form {
@@ -65,11 +65,20 @@ footer p {
 }
 
 .footer-logo img {
-    width: 200px;
+    width: 130px;
 }
 
 footer a:hover {
     color: #65CDF2 !important;
+}
+
+#footer .l-section-h.i-cf {
+    padding-top: 25px;
+		padding-bottom: 0px;
+}
+
+#footer {
+    color: #000;
 }
 
 /* Home page Inspiration section */
@@ -505,7 +514,7 @@ section.related.products {
 	.for_blogpost.type-article .w-blog-post-preview img{
 		height: auto; 
 	}
-  
+	
 	.w-sharing.type_solid .w-sharing-item {
 		min-width: 30px;
 		padding: 0 0px;
@@ -513,7 +522,6 @@ section.related.products {
 		line-height: 30px;
 		font-size: 12px;
 	}
-
 }
 
 
@@ -556,10 +564,14 @@ section.related.products {
 }
 
 .w-nav.type_desktop #menu-item-573 {
-    width: 70%;
+    width: 60%;
 }
 .w-nav.type_desktop #menu-item-574 {
     width: 30%;
+}
+
+nav .level_1 .menu-item {
+    margin-right: 10px;
 }
 
 /*********** Archive ****************/
